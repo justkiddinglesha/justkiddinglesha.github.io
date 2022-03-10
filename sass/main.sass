@@ -40,6 +40,13 @@ body
   color: #000
   position: relative
 
+img,
+svg
+  display: block
+  height: auto
+  margin: 0
+  max-width: 100%
+
 .container
   max-width: 820px
   margin: 0 auto
@@ -107,6 +114,7 @@ body
 .content__row
   display: flex 
   justify-content: space-between
+  width: 100%
   @media screen and (max-width: 767px)
     flex-direction: column
     position: relative
@@ -151,6 +159,7 @@ body
     max-width: 100%
 
 .content__picture-first
+  width: 100%
   max-width: 284px
   @media screen and (max-width: 767px)
     border-bottom-left-radius: 3%
@@ -187,6 +196,7 @@ body
 
 .content__picture-second
   max-width: 100%
+  width: 100%
 
 .socials
   display: flex 
