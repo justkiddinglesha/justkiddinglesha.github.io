@@ -1,0 +1,182 @@
+@font-face 
+  font-family: "SF"
+  src: url("../fonts/SFHeavy.woff2") format("woff2")
+  font-weight: 800
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: "SF"
+  src: url("../fonts/SFBold.woff2") format("woff2")
+  font-weight: 700
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: "SF"
+  src: url("../fonts/SFRegular.woff2") format("woff2")
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: "SF"
+  src: url("../fonts/SFMedium.woff2") format("woff2")
+  font-weight: 500
+  font-style: normal
+  font-display: swap
+
+body, *
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  outline: none
+
+body
+  background: #fff
+  font-family: 'SF', sans-serif
+  font-size: 12px
+  font-weight: 400
+  line-height: 14px
+  color: #000
+  position: relative
+
+img,
+svg
+  display: block
+  height: auto
+  margin: 0
+  max-width: 100%
+
+.container
+  max-width: 870px
+  margin: 0 auto
+  padding: 0 15px
+  @media screen and (max-width: 1023px)
+    padding: 0 37px
+  @media screen and (max-width: 767px)
+    padding: 0 32px
+  @media screen and (max-width: 575px)
+    padding: 0 20px
+
+.article 
+  padding: 80px 0 50px
+
+.article__title
+  font-size: 64px 
+  font-weight: 800 
+  line-height: 76px 
+  margin-bottom: 78px
+
+.article__subtitle
+  font-size: 32px 
+  font-weight: 600 
+  line-height: 46px
+  letter-spacing: -0.4px
+  margin: 51px 0 20px
+
+.article__description
+  font-size: 15px 
+  font-weight: 400
+  line-height: 17px 
+  margin-bottom: 62px
+
+.article__text
+  font-size: 17px 
+  font-weight: 400
+  line-height: 24.5px
+  margin-bottom: 24.5px
+
+.article__text-bold
+  font-size: 17px 
+  font-weight: 600
+  line-height: 24.5px
+  margin-bottom: 24px
+
+.socials
+  display: flex 
+  align-items: center
+  list-style: none 
+  padding: 0 
+  margin: 0
+  @media screen and (max-width: 359px)
+    width: 100%
+    justify-content: space-between
+
+.socials__item
+  width: 38px 
+  height: 38px 
+  border-radius: 9px 
+  overflow: hidden
+  &:not(:last-child)
+    margin-right: 20px 
+    @media screen and (max-width: 575px)
+      margin-right: 18px
+    @media screen and (max-width: 359px)
+      margin-right: 0
+
+.socials__link
+  display: block 
+  width: 100%
+  height: 100%
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+.footer
+  padding: 30px 0
+
+.footer__inner
+  display: flex
+  justify-content: space-between
+  @media screen and (max-width: 767px)
+    flex-direction: column
+    align-items: flex-start
+
+.footer__right
+  display: flex
+  align-items: flex-end
+  @media screen and (max-width: 767px)
+    margin-top: 47px
+  @media screen and (max-width: 575px)
+    flex-direction: column
+    align-items: flex-start
+
+.footer__links
+  display: flex
+  align-items: center
+  margin: 0
+  @media screen and (max-width: 1023px)
+    margin-bottom: 3px
+  @media screen and (max-width: 575px)
+    margin-bottom: 44px
+
+.footer__link
+  font-size: 12px 
+  font-weight: 500
+  line-height: 14px 
+  letter-spacing: -0.3px
+  color: #000 
+  text-decoration: none
+  position: relative
+  margin-right: 24px
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  @media screen and (max-width: 1023px)
+    margin-right: 23px
+  @media screen and (max-width: 767px)
+    margin-right: 22px
+  &:after 
+    position: absolute
+    right: -12px 
+    top: -4px 
+    width: 1px 
+    height: 20px 
+    background: #000 
+    border-radius: 10px 
+    content: ''
+
+.footer__copyright
+  font-size: 12px 
+  font-weight: 500
+  line-height: 14px 
+  letter-spacing: -0.3px
+  @media screen and (max-width: 1023px)
+    margin-bottom: 3px

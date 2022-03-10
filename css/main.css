@@ -14,13 +14,6 @@
 }
 @font-face {
   font-family: "SF";
-  src: url("../fonts/SFRegular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "SF";
   src: url("../fonts/SFMedium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
@@ -38,6 +31,7 @@ body {
   background: #fff;
   font-family: "SF", sans-serif;
   font-size: 12px;
+  font-weight: 500;
   line-height: 14px;
   color: #000;
   position: relative;
@@ -475,6 +469,7 @@ svg {
 
 .footer__copyright {
   font-size: 12px;
+  font-weight: 500;
   line-height: 14px;
   letter-spacing: -0.3px;
 }
