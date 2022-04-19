@@ -30,7 +30,6 @@ Thumbs.db
 .hg
 .idea
 .svn
-dist
 zip
 
 # Node.JS
