@@ -1,0 +1,383 @@
+.hero {
+	padding: 0 0 96px;
+	overflow: hidden;
+
+	@media screen and (max-width: 1920px) {
+		padding-bottom: 47px;
+	}
+
+	@media screen and (max-width: 1024px) {}
+
+	&__bg {
+		width: 100%;
+		height: 395px;
+		position: relative;
+		overflow: hidden;
+
+		@media screen and (max-width: 1920px) {
+			height: 336px;
+		}
+
+		@media screen and (max-width: 1440px) {
+			height: 308px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			height: 290px;
+		}
+
+		&:before {
+			width: 725px;
+			height: 124px;
+			background: rgba(11, 13, 32, 0.95);
+			filter: blur(100px);
+			position: absolute;
+			bottom: -100px;
+			left: 10px;
+			content: '';
+
+			@media screen and (max-width: 1920px) {
+				width: 378px;
+				height: 80px;
+				left: 0;
+				bottom: -40px;
+			}
+		}
+
+		&:after {
+			width: 725px;
+			height: 124px;
+			background: rgba(11, 13, 32, 0.95);
+			filter: blur(100px);
+			position: absolute;
+			bottom: -100px;
+			right: 10px;
+			content: '';
+
+			@media screen and (max-width: 1920px) {
+				width: 378px;
+				height: 80px;
+				right: 0;
+				bottom: -40px;
+			}
+		}
+	}
+
+	&__shadow {
+		position: absolute;
+		left: calc(50% - 272.5px);
+		top: 190px;
+		width: 545px;
+		height: 545px;
+		border-radius: 50%;
+		background: rgba(11, 13, 32, 0.95);
+		filter: blur(100px);
+		content: '';
+
+		@media screen and (max-width: 1920px) {
+			width: 400px;
+			height: 400px;
+			left: calc(50% - 200px);
+		}
+	}
+
+	&__blue,
+	&__orange {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center bottom;
+		}
+	}
+
+	&__logo-wrapper {
+		display: flex;
+		align-items: center;
+		margin-top: -215px;
+		position: relative;
+
+		@media screen and (max-width: 1920px) {
+			margin-top: -158px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			margin-top: -140px;
+		}
+	}
+
+	&__left-line {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		flex: 1;
+		margin-bottom: 34px;
+
+		@media screen and (max-width: 1920px) {
+			margin-bottom: 10px;
+		}
+
+		@media screen and (max-width: 1440px) {
+			margin-bottom: 23px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			margin-bottom: 15px;
+		}
+
+		.hero__line {
+			transform: rotate(180deg);
+			margin-right: -40px;
+
+			@media screen and (max-width: 1920px) {
+				margin-right: -35px;
+			}
+
+			@media screen and (max-width: 1440px) {}
+		}
+	}
+
+	&__line {
+		max-width: 0;
+		height: 2px;
+	}
+
+	&__right-line {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		flex: 1;
+		margin-bottom: 34px;
+
+		@media screen and (max-width: 1920px) {
+			margin-bottom: 10px;
+		}
+
+		@media screen and (max-width: 1440px) {
+			margin-bottom: 23px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			margin-bottom: 16px;
+		}
+
+		.hero__line {
+			margin-left: -40px;
+
+			@media screen and (max-width: 1920px) {
+				margin-left: -35px;
+			}
+		}
+	}
+
+	&__runes-wrapper {
+		width: 456px;
+		height: 30px;
+		position: relative;
+		margin: 0 2px 11px;
+
+		@media screen and (max-width: 1920px) {
+			max-width: 326px;
+			margin: 0;
+		}
+
+		@media screen and (max-width: 1440px) {
+			max-width: 202px;
+			height: 21px;
+			overflow: hidden;
+			margin-bottom: 10px;
+
+			img {
+				max-width: 320px;
+				height: 21px;
+			}
+		}
+
+		@media screen and (max-width: 1024px) {
+			max-width: 182px;
+			height: 19px;
+			margin-bottom: 6px;
+
+			img {
+				max-width: 290px;
+				height: 19px;
+			}
+		}
+	}
+
+	&__runes-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: var(--color-main);
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 545px;
+		height: 545px;
+		border-radius: 50%;
+		background: var(--color-main) url('/assets/images/logo-border.svg') no-repeat top center;
+		margin-top: 10px;
+		flex-shrink: 0;
+
+		@media screen and (max-width: 1920px) {
+			width: 400px;
+			height: 400px;
+			background-size: 386px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			width: 344px;
+			height: 344px;
+			background-size: 333px;
+		}
+	}
+
+	&__logo-inner {
+		width: 465px;
+		height: 465px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		@media screen and (max-width: 1920px) {
+			width: 330px;
+			height: 330px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			width: 282px;
+			height: 282px;
+		}
+
+		@media screen and (max-width: 768px) {
+			width: 240px;
+			height: 240px;
+		}
+	}
+
+	&__ornament {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__font {
+		position: absolute;
+		top: calc(50% - 200px);
+		left: calc(50% - 200px);
+
+		@media screen and (max-width: 1920px) {
+			width: 284px;
+			height: 284px;
+			top: calc(50% - 142px);
+			left: calc(50% - 142px);
+		}
+
+		@media screen and (max-width: 1024px) {
+			width: 244px;
+			height: 244px;
+			top: calc(50% - 122px);
+			left: calc(50% - 122px);
+		}
+
+		@media screen and (max-width: 768px) {
+			width: 206px;
+			height: 206px;
+			top: calc(50% - 103px);
+			left: calc(50% - 103px);
+		}
+	}
+
+	&__title {
+		font-size: 63px;
+		font-weight: 400;
+		line-height: 68px;
+		text-align: center;
+		text-transform: uppercase;
+		max-width: 200px;
+		margin-top: 4px;
+
+		@media screen and (max-width: 1920px) {
+			font-size: 44px;
+			line-height: 47px;
+		}
+
+		@media screen and (max-width: 1024px) {
+			font-size: 40px;
+			line-height: 40px;
+		}
+	}
+
+	&__row {
+		@media screen and (max-width: 1920px) {
+			margin-top: -7px;
+		}
+
+		@media screen and (max-width: 1440px) {
+			margin-top: 213px;
+		}
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 80px;
+
+			@media screen and (max-width: 1920px) {
+				padding: 0 20px;
+			}
+
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+			}
+		}
+	}
+
+	&__description {
+		font-family: var(--font-second);
+		color: var(--color-grey);
+		max-width: 460px;
+
+		@media screen and (max-width: 1440px) {
+			max-width: 350px;
+		}
+
+		@media screen and (max-width: 768px) {
+			font-size: 16px;
+			line-height: 24px;
+			max-width: 100%;
+		}
+	}
+
+	&__video {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	&__video-title {
+		font-family: var(--font-second);
+		color: var(--color-grey);
+		max-width: 60px;
+		margin: 20px 20px 0 0;
+
+		@media screen and (max-width: 1024px) {
+			margin: 0 28px 0 0;
+		}
+	}
+}

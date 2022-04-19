@@ -1,0 +1,28 @@
+{
+  "parser": "@babel/eslint-parser",
+  "plugins": ["only-warn"],
+  "extends": ["eslint:recommended", "airbnb-base"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jquery": true
+  },
+  "rules": {
+    "consistent-return": "off",
+    "no-unused-vars": "off",
+    "no-console": "off",
+    "func-names": "off",
+    "linebreak-style": 0
+  },
+  "parserOptions": {
+    "parser": "@babel/eslint-parser",
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./webpack.config.js"
+      }
+    }
+  },
+}

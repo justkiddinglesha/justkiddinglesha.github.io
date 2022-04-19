@@ -1,0 +1,9 @@
+.logo {
+	width: 74px;
+	position: relative;
+	z-index: 3;
+
+	@media screen and (max-width: 1024px) {
+		display: none;
+	}
+}

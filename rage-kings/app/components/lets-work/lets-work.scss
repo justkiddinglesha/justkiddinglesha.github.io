@@ -1,0 +1,35 @@
+.lets-work {
+	padding: 185px 0 50px;
+	box-shadow: 0px 36px 35px rgba(20, 22, 44, 0.8);
+
+	@media screen and (max-width: 1920px) {
+		padding: 160px 0 45px;
+	}
+
+	@media screen and (max-width: 1440px) {
+		padding-bottom: 60px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		padding: 140px 0 40px;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 106px 0 30px;
+	}
+
+	.main-title {
+		max-width: 600px;
+		margin: 0 auto;
+
+		@media screen and (max-width: 1440px) {
+			font-size: 70px;
+			line-height: 84px;
+		}
+
+		@media screen and (max-width: 768px) {
+			font-size: 40px;
+			line-height: 48px;
+		}
+	}
+}

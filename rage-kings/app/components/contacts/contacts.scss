@@ -1,0 +1,34 @@
+.contacts {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__info {
+		display: flex;
+		max-width: 50%;
+	}
+	&__info-col {
+		&:not(:last-child) {
+			margin-right: 60px;
+		}
+	}
+	&__col-title {
+		font-family: var(--font-second);
+		color: var(--color-gold);
+		margin: 0 0 15px;
+	}
+	&__phone {
+		font-size: 30px;
+		line-height: 36px;
+		color: var(--color-gold);
+		text-decoration: none;
+	}
+	&__mail {
+		font-size: 30px;
+		line-height: 36px;
+		color: var(--color-gold);
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+}

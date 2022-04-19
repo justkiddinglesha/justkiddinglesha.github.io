@@ -1,0 +1,129 @@
+.main-title {
+    font-size: 90px;
+    line-height: 108px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (max-width: 1440px) {
+        font-size: 70px;
+        line-height: 84px;
+        letter-spacing: 4px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 2.3px;
+    }
+}
+
+// h1,
+// .h1 {
+//   font-size: 62px;
+//   line-height: 72px;
+//   font-weight: 500;
+//   letter-spacing: 1px;
+//   margin-bottom: 20px;
+
+//   @media screen and (max-width: 1023px) {
+//     font-size: 36px;
+//     line-height: 44px;
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     font-size: 32px;
+//     line-height: 40px;
+//   }
+
+//   strong {
+//     color: var(--color-main);
+//   }
+// }
+
+// h2,
+// .h2 {
+//   font-size: 46px;
+//   line-height: 52px;
+//   font-weight: 700;
+//   letter-spacing: 1px;
+//   margin-bottom: 25px;
+
+//   @media screen and (max-width: 1023px) {
+//     font-size: 36px;
+//     line-height: 44px;
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     font-size: 32px;
+//     line-height: 40px;
+//   }
+
+//   strong {
+//     color: var(--color-main);
+//   }
+// }
+
+// h3,
+// .h3 {
+//   font-size: 32px;
+//   line-height: 40px;
+//   font-weight: 700;
+//   margin-bottom: 20px;
+
+//   @media screen and (max-width: 1023px) {
+//     font-size: 24px;
+//     line-height: 32px;
+//   }
+// }
+
+// h4,
+// .h4 {
+//   font-size: 24px;
+//   line-height: 30px;
+//   font-weight: 600;
+//   margin-bottom: 14px;
+
+//   @media screen and (max-width: 1023px) {
+//     font-size: 20px;
+//     line-height: 26px;
+//   }
+// }
+
+// h5,
+// .h5 {
+//   font-size: 20px;
+//   line-height: 30px;
+//   font-weight: 600;
+//   margin-top: 0;
+//   margin-bottom: 20px;
+
+//   @media screen and (max-width: 1023px) {
+//     font-size: 18px;
+//     line-height: 26px;
+//   }
+// }
+
+// p {
+//   margin-bottom: 16px;
+
+//   @media screen and (max-width: 1023px) {
+//     margin-bottom: 12px;
+//   }
+
+//   &:last-child {
+//     margin: 0;
+//   }
+// }
+
+// a:not([class]) {
+//   color: var(--color-main);
+//   text-decoration: underline;
+//   transition: text-decoration-color 0.2s ease;
+//   text-decoration-color: transparent;
+
+//   &:hover {
+//     text-decoration-color: var(--color-main);
+//   }
+// }

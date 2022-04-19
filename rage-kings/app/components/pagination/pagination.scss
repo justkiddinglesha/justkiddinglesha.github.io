@@ -1,0 +1,125 @@
+.pagination {
+	list-style: none;
+	padding: 0;
+	margin: 70px 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__item {
+		&_prev,
+		&_next,
+		&_first,
+		&_last {
+			width: 47px;
+			height: 47px;
+			position: relative;
+			padding: 2px;
+			margin: 0 2.5px;
+			border-radius: 50%;
+			background: var(--color-main);
+			box-shadow: 0px 25px 32px -4px rgba(245, 151, 64, 0.17);
+			&:after {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				border: 0.5px solid var(--color-second);
+				border-radius: 50%;
+				content: '';
+			}
+		}
+	}
+	&__item-link {
+		display: block;
+		width: 43px;
+		height: 43px;
+		border-radius: 50%;
+		border: 0.5px solid var(--color-second);
+		text-decoration: none;
+		position: relative;
+		z-index: 1;
+		&_first {
+			&:before {
+				width: 11px;
+				height: 14px;
+				position: absolute;
+				top: calc(50% - 7px);
+				left: 10px;
+				background: url('../images/arrow-pagination.svg') no-repeat;
+				content: '';
+			}
+			&:after {
+				width: 11px;
+				height: 14px;
+				position: absolute;
+				top: calc(50% - 7px);
+				left: 17px;
+				background: url('../images/arrow-pagination.svg') no-repeat;
+				content: '';
+			}
+		}
+		&_next {
+			&:after {
+				width: 11px;
+				height: 14px;
+				position: absolute;
+				top: calc(50% - 7px);
+				left: 17px;
+				background: url('../images/arrow-pagination.svg') no-repeat;
+				content: '';
+				transform: rotate(180deg)
+			}
+		}
+		&_last {
+			&:before {
+				width: 11px;
+				height: 14px;
+				position: absolute;
+				top: calc(50% - 7px);
+				left: 13px;
+				background: url('../images/arrow-pagination.svg') no-repeat;
+				content: '';
+				transform: rotate(180deg)
+			}
+			&:after {
+				width: 11px;
+				height: 14px;
+				position: absolute;
+				top: calc(50% - 7px);
+				left: 21px;
+				background: url('../images/arrow-pagination.svg') no-repeat;
+				content: '';
+				transform: rotate(180deg)
+			}
+		}
+		&_prev {
+			&:after {
+				width: 11px;
+				height: 14px;
+				position: absolute;
+				top: calc(50% - 7px);
+				left: 13px;
+				background: url('../images/arrow-pagination.svg') no-repeat;
+				content: '';
+			}
+		}
+	}
+	&__item-page {
+		display: block;
+		font-size: 30px;
+		line-height: 36px;
+		color: var(--color-third);
+		text-decoration: none;
+		text-align: center;
+		min-width: 45px;
+		transition: 0.3s ease;
+		&:hover {
+			transform: scale(1.3);
+			color: var(--color-second);
+		}
+		&_active {
+			color: var(--color-second);
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.service {
+	padding: 100px 0 125px;
+	&__text-wrapper {
+		max-width: 50%;
+		margin: -30px 0 0 auto;
+		p {
+			font-size: 18px;
+			line-height: 27px;
+			color: var(--color-grey);
+			&:not(:last-child) {
+				margin-bottom: 60px;
+			}
+		}
+	}
+	.main-title {
+		text-align: left;
+		max-width: 660px;
+	}
+}
