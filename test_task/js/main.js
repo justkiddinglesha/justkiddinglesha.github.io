@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (rangeInput && rangeInputValue) {
 		rangeInput.addEventListener('input', (event) => {
 			const value = event.target.value
-			const progress = (value / rangeInput.max) * 100
+			const progress = Math.round((value / rangeInput.max) * 100)
 			rangeInputValue.textContent = `${progress}%`
 		})
 	}
